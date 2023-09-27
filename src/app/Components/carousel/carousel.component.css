@@ -1,0 +1,54 @@
+.bb{
+        width: 100%;
+        font-size:xx-large;
+        color: white;
+        background-color: #019cde;
+        -webkit-text-stroke: 1px black;
+        font-weight: bold;
+}
+
+.ok{
+        width: 100%;
+        height: 500px;
+}
+
+
+
+.text1{
+        color: white;
+        text-align: left;
+        font-size: calc(0.5rem + 2.5vw);
+        -webkit-text-stroke: 1.2px black;
+        font-weight: bold; line-height: 1.2;
+        visibility: visible;
+        animation-duration: 2s;
+        animation-name: slideInLeft;
+        padding-bottom: 7%;
+}
+
+.text2{
+        color: white;
+        text-align: left;
+        font-size: calc(0.5rem + 2.5vw);
+        -webkit-text-stroke: 1.2px black;
+        font-weight: bold; line-height: 1.2;
+        visibility: visible;
+        animation-duration: 2s;
+        animation-name: slideInRight;
+        
+}
+
+
+.animation{
+
+}
+
+.slideInUp {
+        
+}
+
+.pulse{
+
+}
+
+

@@ -1,0 +1,38 @@
+.style {
+    position: absolute;
+    /* top: 80%;
+    left: 50%; */
+    transform: translate(-50%, -55%);
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    color: white;
+    font-size: 20px;
+    width: 83%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+.text1{
+    color: white;
+    text-align: left;
+    font-size: calc(0.5rem + 2.5vw);
+    -webkit-text-stroke: 1.2px black;
+    font-weight: bold; line-height: 1.2;
+    visibility: visible;
+    animation-duration: 2s;
+    animation-name: slideInLeft;
+    padding-bottom: 7%;
+}
+
+.text2{
+    color: white;
+    text-align: left;
+    font-size: calc(0.5rem + 2.5vw);
+    -webkit-text-stroke: 1.2px black;
+    font-weight: bold; line-height: 1.2;
+    visibility: visible;
+    animation-duration: 2s;
+    animation-name: slideInRight;
+    
+}

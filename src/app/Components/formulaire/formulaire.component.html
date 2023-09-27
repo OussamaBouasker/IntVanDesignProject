@@ -1,0 +1,66 @@
+<!-- <head>
+    <title>Formulaire Responsive</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head> -->
+
+    <div [formGroup]="form" class="container mt-4" style="border: ridge;background-color: #86bed6;color: black;">
+      <form action="javascript:void(0)" (submit)="send()">
+        <div class="form-group">
+          <label for="nom">Nom:</label>
+          <input formControlName="from_name"
+          type="text" class="form-control" id="nom" placeholder="Entrez votre nom (***champ obligatoire)">
+        </div>
+        <!-- <div class="form-group">
+          <label for="email">Email:</label>
+          <input formControlName="from_email"
+          type="email" class="form-control" id="email" placeholder="Entrez votre email (***champ obligatoire)">
+        </div> -->
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+           <input placeholder="Entrez votre email (***champ obligatoire)" class="form-control" type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+        </div>
+
+        <!-- <form>
+          <label for="email">Adresse e-mail :</label>
+          <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+          <input type="submit" value="Soumettre">
+        </form> -->
+        
+
+
+
+
+        <div class="form-group">
+          <label for="numtel">Numéro de téléphone:</label>
+          <input formControlName="num"
+          type="tel" class="form-control" id="numtel" placeholder="Entrez votre numéro de téléphone (***champ obligatoire)">
+        </div>
+        <div class="form-group">
+          <label for="pays">Pays:</label>
+          <input formControlName="pays"
+          type="text" class="form-control" id="pays" placeholder="Entrez votre pays">
+        </div>
+
+        <div class="form-group">
+            <label for="pays">Message:</label>
+            <input formControlName="message"
+            type="text" class="form-control" id="pays" placeholder="Entrez votre pays">
+        </div>
+        <div>
+            <!-- <button type="submit" class="formbold-btn">Submit</button> -->
+            <button type="submit" class="btn waves-effect waves-light btn-success">Submit</button> 
+        </div>
+        <br>
+      </form>
+    </div>
+    <br>
+    <br>
+
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,17 @@
+.ok{
+    color: rgb(238, 5, 5);
+}
+
+a{
+    font-size: large;
+    color: black;
+}
+
+.mrg{
+width: max-content;
+margin-right: auto;
+}
+
+.back{
+    background-color:rgb(214, 213, 213); 
+}

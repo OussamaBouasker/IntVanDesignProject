@@ -1,0 +1,74 @@
+ .fluid {
+     height: 50%;
+     padding: 10px;
+     border: ridge;
+     background-color: rgba(255, 0, 64, 0.03);
+ }
+
+ .img-fluid {
+     text-align: center;
+     max-width: 100%;
+     height: 80%;
+     margin-left: 1px;
+ }
+
+
+ .card-img-top {
+     width: 100%;
+     border-top-left-radius: calc(0px - 0px);
+     border-top-right-radius: calc(0px - 0px);
+ }
+
+ .k {
+     font-size:x-large;
+     text-align: center;
+     height: 40px;
+ }
+
+ .d{
+    font-size: large;
+    text-align: left;
+    /* text-align: center; */
+    height: 210px;
+}
+a{
+    color: black;
+}
+
+.marg{
+    margin-top: 20px;
+}
+
+.dd{
+    font-size: large;
+    text-align: left;
+    /* text-align: center; */
+    height: 140px;
+    max-width: 1000px;
+
+}
+
+.animation{
+
+}
+.flash{}
+
+.mouseenter{
+
+}
+
+.pulse{
+
+}
+
+.tada{}
+
+.card123{
+    padding: 20px; /* Add padding for content */
+    background-color: #fff; /* Set background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+    border-radius: 10px; /* Set the border radius for rounded corners */
+  }
+
+
+

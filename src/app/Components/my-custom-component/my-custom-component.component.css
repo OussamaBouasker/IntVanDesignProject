@@ -1,0 +1,131 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* Example of responsive CSS for the custom component */
+div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .title{
+    text-align: center;
+    font-size: xx-large;
+} */
+
+/* h1.stileTitolo {
+    font-size: 48px;
+    margin-bottom: 0.5rem;
+    font-family: "Raleway",Helvetica,Arial,sans-serif !important;
+    font-weight: 500;
+    color: black !important;
+    line-height: 1.2;
+    color: #29293a;
+    margin-top: 0;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.stileTitolo {
+    font-size: 48px;
+    margin-bottom: 0.5rem;
+    font-family: "Raleway",Helvetica,Arial,sans-serif !important;
+    color: black !important;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #29293a;
+    margin-top: 0;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+} */
+
+a {
+    color: white;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+hr {
+    border-color: #c2c2c3;
+}
+
+.divider {
+    display: inline-block;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    height: 3px;
+    max-width: 100px;
+    width: 50%;
+}
+
+.divider-default {
+    background: linear-gradient(to right, #019cde 50%, #006894 120%);
+}
+
+#topheader .navbar-nav li > a {
+	text-transform: capitalize;
+	color: #333;
+	transition: background-color .2s, color .2s;
+	
+	&:hover,
+	&:focus {
+		background-color: #333;
+		color: #fff;
+	}
+}
+
+#topheader .navbar-nav li.active > a {
+	background-color: #333;
+	color: #fff;
+}
+
+.KK{
+color: yellow;
+text-align:center;
+height: 20px;
+max-width: 100px;
+width: 50%;
+}
+
+.text{
+    text-align: left
+}
+
+h1,h2.stileTitoloCapitolo {
+    font-size: 35px;
+    margin-bottom: 0.5rem;
+    font-family: "Raleway",Helvetica,Arial,sans-serif !important;
+    color: black !important;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #29293a;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.textCorpo {
+    text-align: left;
+    font-family: "Raleway",Helvetica,Arial,sans-serif !important;
+    font-weight: normal;
+    color: black !important;
+}
+
+
+.class1{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #4fc1f1;
+    background: rgb(0, 0, 0);
+    border-radius: 100px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+

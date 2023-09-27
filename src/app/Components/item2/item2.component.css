@@ -1,0 +1,38 @@
+.fluid {
+    height: 50%;
+    padding: 10px;
+    border: ridge;
+    background-color: rgba(255, 0, 64, 0.03);
+}
+
+.img-fluid {
+    text-align: center;
+    max-width: 100%;
+    height: 80%;
+    margin-left: 1px;
+}
+
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(0px - 0px);
+    border-top-right-radius: calc(0px - 0px);
+}
+
+.k {
+    font-size: large;
+    text-align: center;
+    height: 85px;
+}
+
+.d{
+   font-size: large;
+   text-align: center;
+   height: 200px;
+}
+
+a{
+    color: black;
+}
+
+

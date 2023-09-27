@@ -1,13 +1,128 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>PfaProject</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+    <head>
+      <meta charset="utf-8">
+      <title>PFA Project</title>
+      <base href="/">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="assets/images/logo-final.png">
+       <!-- Custom CSS -->
+        <link href="assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/libs/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+        <!-- Custom CSS -->
+        <link href="assets/css/style.min.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+        <link href="assets/extra-libs/c3/c3.min.css" rel="stylesheet">
+        <link href="assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/libs/select2/dist/css/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/libs/daterangepicker/daterangepicker.css">
+        <link href="assets/extra-libs/prism/prism.css" rel="stylesheet">
+        <link href="assets/dist/css/style.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <app-root></app-root>
+        <!-- All Jquery -->
+        <!-- ============================================================== -->
+        <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+        <script src="assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <!-- Bootstrap tether Core JavaScript -->
+        <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
+        <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- apps -->
+        <script src="assets/dist/js/app.js"></script>
+        <script src="assets/dist/js/app.init.js"></script>
+        <script src="assets/dist/js/app-style-switcher.js"></script>
+        <!-- slimscrollbar scrollbar JavaScript -->
+        <script src="assets/libs/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+        <script src="assets/extra-libs/sparkline/sparkline.js"></script>
+        <!--Wave Effects -->
+        <script src="assets/dist/js/waves.js"></script>
+        <!--Menu sidebar -->
+        <script src="assets/dist/js/sidebarmenu.js"></script>
+        <!--Custom JavaScript -->
+        <script src="assets/extra-libs/prism/prism.js"></script>
+        <script src="assets/dist/js/custom.min.js"></script>
+        <!--chartis chart-->
+        <script src="assets/libs/chartist/dist/chartist.min.js"></script>
+        <script src="assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+        <script src="assets/extra-libs/c3/d3.min.js"></script>
+        <script src="assets/extra-libs/c3/c3.min.js"></script>
+        <script src="assets/libs/select2/dist/js/select2.full.min.js"></script>
+        <script src="assets/libs/select2/dist/js/select2.min.js"></script>
+        <script src="assets/dist/js/pages/forms/select2/select2.init.js"></script>
+        <script src="assets/libs/moment/moment.js"></script>
+        <script src="assets/libs/daterangepicker/daterangepicker.js"></script>
+        <script>
+        $('#sidebarnav a').click(function () {
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top - 85
+            }, 500);
+            return false;
+        });
+        var lastId, topMenu = $("#sidebarnav"),
+            topMenuHeight = topMenu.outerHeight(),
+            menuItems = topMenu.find("a"),
+            scrollItems = menuItems.map(function () {
+                var item = $($(this).attr("href"));
+                if (item.length) {
+                    return item;
+                }
+            });
+        $(window).scroll(function () {
+            var fromTop = $(this).scrollTop() + topMenuHeight - 85;
+            var cur = scrollItems.map(function () {
+                if ($(this).offset().top < fromTop) return this;
+            });
+            cur = cur[cur.length - 1];
+            var id = cur && cur.length ? cur[0].id : "";
+            if (lastId !== id) {
+                lastId = id;
+                menuItems.removeClass("active").filter("[href='#" + id + "']").addClass("active");
+            }
+        });
+
+        /*******************************************/
+        // Basic Date Range Picker
+        /*******************************************/
+        $('.daterange').daterangepicker();
+
+        /*******************************************/
+        // Date & Time
+        /*******************************************/
+        $('.datetime').daterangepicker({
+            timePicker: true,
+            timePickerIncrement: 30,
+            locale: {
+                format: 'MM/DD/YYYY h:mm A'
+            }
+        });
+
+        /*******************************************/
+        //Calendars are not linked
+        /*******************************************/
+        $('.timeseconds').daterangepicker({
+            timePicker: true,
+            timePickerIncrement: 30,
+            timePicker24Hour: true,
+            timePickerSeconds: true,
+            locale: {
+                format: 'MM-DD-YYYY h:mm:ss'
+            }
+        });
+
+        /*******************************************/
+        // Single Date Range Picker
+        /*******************************************/
+        $('.singledate').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true
+        });
+        </script>
+    </body>
 </html>
